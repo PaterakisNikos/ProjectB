@@ -1,0 +1,177 @@
+/*
+* Predifined variables...
+* Use them for making changes without searching the hall file
+*/
+:root{
+    --navfooter-bg-color: #333333;
+    --navfooter-text-color: white;
+    --navbar-hoverbg-color: #4CAF50;
+    --navbar-activebg-color: #000000;
+    --body-bg-color: #151515;
+    --body-text-color: #000000;
+    --navbar-height: 52px;
+    --footer-title-text-color: #4CAF50;
+    --footer-height: 60px;
+}
+
+*{
+    margin: 0px;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--body-bg-color); 
+    color: var(--body-text-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+}
+
+/**** Navigation Bar ****/
+.navbar{
+    display: -webkit-box;
+    position: fixed;
+    top: 0px;
+    -webkit-box-orient: horizontal;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--navfooter-bg-color);
+}
+
+.navbar ul{
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar li{
+    float: left;
+    height: 100%;
+}
+  
+.navbar li a{
+    display: block;
+    color: var(--navfooter-text-color);
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+}
+  
+.navbar li a.active{
+    background-color: var(--navbar-activebg-color);
+}
+  
+.navbar li:hover, .navbar li:hover a.active{
+	cursor: pointer;
+    background-color: var(--navbar-hoverbg-color);
+}
+
+.SearchContainer{
+    width: 60%;
+    display: -webkit-box;
+    padding-left: 10px;
+    padding-top:12px;
+}
+
+.SearchContainer form{
+    width: 100%;
+}
+
+.SearchContainer input{
+    width: 90%;
+    font-size: 18px;
+}
+
+/**** Meat of the Webpage ****/
+.meat{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+    margin-top: var(--navbar-height);
+}
+
+main{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+}
+
+.ResultContainer{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    margin-top: 30px;
+}
+
+#bookmark{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	margin-left: 130px;
+	color: transparent;
+}
+
+#bookmark:hover{
+	cursor: pointer;
+}
+
+.ResultContent{
+    display: -webkit-box;
+    -webkit-break-orient: vertical;
+    -webkit-box-pack: center;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ResultContent p{
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    color: white;
+}
+
+
+/**** Footer ****/
+#foot{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: var(--footer-height);
+    background-color: var(--navfooter-bg-color);
+    color: var(--navfooter-text-color);
+}
+
+.right-notice{
+    margin-left: 120px;
+    margin-top: 12px;
+}
+
+.foot-content{
+    right: 120px;
+    position: absolute;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-align: center;
+}
+
+#foot .title{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--footer-title-text-color);
+}

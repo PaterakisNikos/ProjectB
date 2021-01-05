@@ -1,0 +1,185 @@
+/*
+* Predifined variables...
+* Use them for making changes without searching the hall file
+*/
+:root{
+    --navfooter-bg-color: #333333;
+    --navfooter-text-color: white;
+    --body-bg-color: #151515;
+    --body-text-color: #000000;
+    --logbox-width: 320px;
+    --logbox-height: 420px;
+    --navbar-height: 52px;
+    --footer-title-text-color: #4CAF50;
+    --footer-height: 60px;
+}
+
+*{
+    margin: 0px;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--body-bg-color); 
+    color: var(--body-text-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+}
+
+/**** Navigation Bar ****/
+.navbar{
+    display: -webkit-box;
+    position: fixed;
+    top: 0px;
+    -webkit-box-orient: horizontal;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--navfooter-bg-color);
+}
+
+/**** Meat of the Webpage ****/
+.meat{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+    margin-top: var(--navbar-height);
+}
+
+main{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+/****** LogBox Style *****/
+
+.logbox{
+    border-radius: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: var(--aside-height);
+    width: var(--logbox-width);
+    height: var(--logbox-height);
+    background: #000;
+    color: #fff;
+}
+
+.usericon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: calc(var(--logbox-width) / 2 - 50px);
+    background: #FF7F50;
+}
+
+.logbox form{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    height: 100%;
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.logbox .title{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--footer-title-text-color);
+}
+
+.logbox a{
+    font-weight: bold;
+}
+
+.logbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.logbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #FF7F50;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.logbox input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #25fb25;
+    color: white;
+}
+
+.logbox .link{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.logbox .link:hover{
+    cursor: pointer;
+    color: #ffc107;
+}
+
+
+/**** Footer ****/
+#foot{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: var(--footer-height);
+    background-color: var(--navfooter-bg-color);
+    color: var(--navfooter-text-color);
+}
+
+.right-notice{
+    margin-left: 120px;
+    margin-top: 12px;
+}
+
+.foot-content{
+    right: 120px;
+    position: absolute;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-align: center;
+}
+
+#foot .title{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--footer-title-text-color);
+}
